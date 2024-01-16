@@ -1,0 +1,66 @@
+# system
+mode: 0
+distribute: True
+num_parallel_workers: 16
+val_while_train: True
+val_interval: 1
+
+# dataset
+dataset: "imagenet"
+data_dir: "/path/to/imagenet"
+shuffle: True
+dataset_download: False
+batch_size: 256
+drop_remainder: True
+
+# augmentation
+image_resize: 224
+scale: [ 0.08, 1.0 ]
+ratio: [ 0.75, 1.333 ]
+hflip: 0.5
+interpolation: "bicubic"
+re_prob: 0.1
+mixup: 0.2
+cutmix: 1.0
+cutmix_prob: 1.0
+crop_pct: 0.875
+color_jitter: [ 0.4, 0.4, 0.4 ]
+auto_augment: "autoaug"
+
+# model
+model: "gmlp_t16_224"
+num_classes: 1000
+pretrained: False
+ckpt_path: ""
+keep_checkpoint_max: 10
+ckpt_save_policy: "top_k"
+ckpt_save_dir: "./ckpt"
+epoch_size: 300
+dataset_sink_mode: True
+amp_level: "O2"
+
+# loss
+loss: "CE"
+loss_scale: 16777216.0
+label_smoothing: 0.1
+
+# lr scheduler
+scheduler: "cosine_decay"
+lr: 0.001
+min_lr: 1e-6
+warmup_epochs: 20
+decay_epochs: 280
+lr_epoch_stair: False
+
+# optimizer
+opt: "adamw"
+weight_decay: 0.05
+filter_bias_and_bn: True
+use_nesterov: False
+loss_scale_type: dynamic
+drop_overflow_update: True
+
+# train
+clip_grad: True
+clip_value: 1.
+drop_path_rate: 0.05

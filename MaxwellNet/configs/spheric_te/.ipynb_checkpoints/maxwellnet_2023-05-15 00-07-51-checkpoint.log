@@ -1,0 +1,26 @@
+Mon, 15 May 2023 00:07:51 train_maxwellnet.py[line:31] INFO training examples/spheric_te
+Mon, 15 May 2023 00:07:51 train_maxwellnet.py[line:50] INFO Experiment description: 
+This experiment learns to solve the Maxwell's equations for a spheric lens data.
+Mon, 15 May 2023 00:08:08 train_maxwellnet.py[line:68] INFO Number of network parameters: 5852648
+Mon, 15 May 2023 00:08:08 train_maxwellnet.py[line:69] DEBUG {'depth': 6, 'filter': 16, 'norm': 'weight', 'up_mode': 'upconv'}
+Mon, 15 May 2023 00:08:08 train_maxwellnet.py[line:70] DEBUG {'wavelength': 1, 'dpl': 20, 'Nx': 160, 'Nz': 192, 'pml_thickness': 30, 'symmetry_x': True, 'mode': 'te', 'high_order': 'fourth'}
+Mon, 15 May 2023 00:08:08 train_maxwellnet.py[line:102] INFO Train Dataset length: 1
+Mon, 15 May 2023 00:08:08 train_maxwellnet.py[line:132] INFO Training start
+Mon, 15 May 2023 00:08:26 train_maxwellnet.py[line:140] INFO [Train] 1 epoch. Loss: 397.63400
+Mon, 15 May 2023 00:08:38 train_maxwellnet.py[line:140] INFO [Train] 2 epoch. Loss: 397.55286
+Mon, 15 May 2023 00:08:46 train_maxwellnet.py[line:140] INFO [Train] 3 epoch. Loss: 397.42407
+Mon, 15 May 2023 00:08:54 train_maxwellnet.py[line:140] INFO [Train] 4 epoch. Loss: 397.20935
+Mon, 15 May 2023 00:09:02 train_maxwellnet.py[line:140] INFO [Train] 5 epoch. Loss: 396.84195
+Mon, 15 May 2023 00:09:09 train_maxwellnet.py[line:140] INFO [Train] 6 epoch. Loss: 396.21661
+Mon, 15 May 2023 00:09:18 train_maxwellnet.py[line:140] INFO [Train] 7 epoch. Loss: 395.16980
+Mon, 15 May 2023 00:09:24 train_maxwellnet.py[line:140] INFO [Train] 8 epoch. Loss: 393.44290
+Mon, 15 May 2023 00:09:31 train_maxwellnet.py[line:140] INFO [Train] 9 epoch. Loss: 390.59644
+Mon, 15 May 2023 00:09:40 train_maxwellnet.py[line:140] INFO [Train] 10 epoch. Loss: 385.83026
+Mon, 15 May 2023 00:09:47 train_maxwellnet.py[line:140] INFO [Train] 11 epoch. Loss: 377.46509
+Mon, 15 May 2023 00:09:57 train_maxwellnet.py[line:140] INFO [Train] 12 epoch. Loss: 361.21613
+Mon, 15 May 2023 00:10:03 train_maxwellnet.py[line:140] INFO [Train] 13 epoch. Loss: 324.53207
+Mon, 15 May 2023 00:10:10 train_maxwellnet.py[line:140] INFO [Train] 14 epoch. Loss: 233.18268
+Mon, 15 May 2023 00:10:16 train_maxwellnet.py[line:140] INFO [Train] 15 epoch. Loss: 392.56915
+Mon, 15 May 2023 00:10:27 train_maxwellnet.py[line:140] INFO [Train] 16 epoch. Loss: 172.29532
+Mon, 15 May 2023 00:10:33 train_maxwellnet.py[line:140] INFO [Train] 17 epoch. Loss: 230.65103
+Mon, 15 May 2023 00:10:40 train_maxwellnet.py[line:140] INFO [Train] 18 epoch. Loss: 250.18074

@@ -1,0 +1,61 @@
+[common_quant_param]
+# Supports WEIGHT_QUANT, FULL_QUANT or DYNAMIC_QUANT
+quant_type=FULL_QUANT
+
+# 设置量化的比特数，目前权重量化支持0-16bit量化，设置为1-16bit时为固定比特量化，设置为0bit时，启用混合比特量化。
+# 全量化、动态量化仅支持8bit量化。
+bit_num=8
+
+# 设置无需量化的算子名称，多个算子之间用','分割。
+#skip_quant_node=node_name1,node_name2,node_name3
+
+# 设置量化Debug信息文件保存的文件夹路径。
+debug_info_save_path=scripts/quant/debug/full
+
+# 权重量化压缩编码使能开关。若量化的比特数不是 8 或 16，则必须为true。
+enable_encode = true
+
+[full_quant_param]
+# 激活值量化算法 MAX_MIN, KL or REMOVAL_OUTLIER。
+activation_quant_method=MAX_MIN
+
+# 是否对量化误差进行校正，能提升量化模型的精度。
+bias_correction=true
+
+# 采用PerChannel(true)或PerLayer(false)的量化方式。
+per_channel = true
+
+# 全量化支持多硬件后端。
+target_device=ASCEND
+
+[data_preprocess_param]
+# 必选，存放校准数据集的目录。如果有多个输入，依次填写对应的数据所在目录，并用','隔开。
+calibrate_path=data/total_text/train/rgb
+#calibrate_path=data/total_text/test/rgb
+
+# 矫正集数量
+calibrate_size=100
+
+# 矫正数据文件格式类型 IMAGE or BIN
+# When set to IMAGE, the image data will be read
+# When set to BIN, the `.bin` binary file will be read
+input_type=IMAGE
+
+# 图像格式转换 RGB or GRAY or BGR
+image_to_format=RGB
+
+# 图像归一化的均值、标准差
+# dst = (src - mean) / std
+normalize_mean=[123.675, 116.28, 103.53]
+normalize_std=[58.395, 57.12, 57.375]
+
+# 图像缩放宽高
+#resize_width=768
+#resize_height=768
+
+# 图像缩放算法 LINEAR or NEAREST or CUBIC
+resize_method=LINEAR
+
+# 中心裁剪宽高
+#center_crop_width=512
+#center_crop_height=512

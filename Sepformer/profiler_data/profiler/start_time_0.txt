@@ -1,0 +1,2 @@
+host_monotonic_raw_time(ns): 1804859222014740
+device_start_time(ns): 1804859222014

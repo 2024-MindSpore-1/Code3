@@ -1,0 +1,1 @@
+python eval.py --directory configs/spheric_tm --model_filename 250000_tm_fourth.ckpt --sample_filename sample.npz

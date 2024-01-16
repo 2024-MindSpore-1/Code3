@@ -1,0 +1,8 @@
+[INFO] MI(1028401:281473773880528,MainProcess):2022-11-21-16:59:42.168.644 [mindinsight/debugger/session_manager.py:60][DEBUGGER] Start to exit sessions.
+[INFO] MI(1028401:281473773880528,MainProcess):2022-11-21-16:59:42.168.880 [mindinsight/debugger/session_manager.py:64][DEBUGGER] Sessions exited.
+[INFO] MI(1132811:281472893273296,MainProcess):2022-11-21-17:14:04.642.978 [mindinsight/debugger/session_manager.py:60][DEBUGGER] Start to exit sessions.
+[INFO] MI(1132811:281472893273296,MainProcess):2022-11-21-17:14:04.643.234 [mindinsight/debugger/session_manager.py:64][DEBUGGER] Sessions exited.
+[INFO] MI(1142071:281473060783312,MainProcess):2022-11-21-17:15:12.094.282 [mindinsight/debugger/session_manager.py:60][DEBUGGER] Start to exit sessions.
+[INFO] MI(1142071:281473060783312,MainProcess):2022-11-21-17:15:12.094.498 [mindinsight/debugger/session_manager.py:64][DEBUGGER] Sessions exited.
+[INFO] MI(1150561:281473411400912,MainProcess):2022-11-21-17:15:58.740.216 [mindinsight/debugger/session_manager.py:60][DEBUGGER] Start to exit sessions.
+[INFO] MI(1150561:281473411400912,MainProcess):2022-11-21-17:15:58.740.518 [mindinsight/debugger/session_manager.py:64][DEBUGGER] Sessions exited.

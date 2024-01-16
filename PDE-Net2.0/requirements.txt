@@ -1,0 +1,6 @@
+numpy~=1.21.2
+scipy~=1.10.1
+sympy~=1.12
+mindspore==1.10.1
+matplotlib~=3.4.3
+PyYAML~=6.0.1

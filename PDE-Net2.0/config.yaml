@@ -1,0 +1,67 @@
+# Env
+device_target: "Ascend"
+context_mode: "pynative"
+device_id: 0
+
+# For pde solver
+max_dt: 0.000625
+max_freq: 4
+viscosity: 0.05
+init_shift: 2.0
+init_range: 2.0
+start_noise_level: 0.001
+end_noise_level: 0.001
+# Common
+dt: 0.01
+# mesh_range = ((0, mesh_range * pi), (0, mesh_range * pi))
+mesh_range: 2
+# mesh_size = (mesh_size, mesh_size)
+mesh_size: 128
+# sample_mesh_size = (sample_mesh_size, sample_mesh_size)
+sample_mesh_size: 32
+
+# PDE Net
+# kernel_size = (kernel_size, kernel_size)
+kernel_size: 5
+max_order: 2
+symnet_hidden_num: 2
+symnet_init_range: 0.0001
+if_upwind: True
+
+# Train
+generate_data_num: 30
+batch_size: 10
+generate_data_interval: 20
+warmup_epochs: 1200
+epochs: 200
+blocks_num: 20
+warmup_lr: 0.001
+lr: 0.001
+lr_reduce_times: 4
+lr_reduce_gamma: 0.5
+# loss
+moment_loss_threshold: 0.01
+symnet_loss_threshold: 0.001
+moment_loss_scale: 0.001
+symnet_loss_scale: 0.005
+
+# Evaluate
+evaluate_data_num: 10
+evaluate_interval: 50
+# expression visualization
+coe_threshold: 0.005
+
+# Model Save
+save_directory: "./checkpoints"
+# Data directory
+data_directory: "./data"
+# Images directory
+images_directory: "./images"
+
+# Test
+test_data_num: 20
+test_batch_size: 20
+test_data_step_num: 400
+test_error_path: './data/test_error.txt'
+# Visualization
+color_map: 'coolwarm'

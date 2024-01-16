@@ -1,0 +1,141 @@
+2022-11-21-16:59:04.464.399 [1028288] [INFO] Starting gunicorn 20.1.0
+2022-11-21-16:59:04.467.693 [1028288] [INFO] Listening at: http://192.168.88.9:10004 (1028288)
+2022-11-21-16:59:04.467.874 [1028288] [INFO] Using worker: gthread
+2022-11-21-16:59:04.471.428 [1028401] [INFO] Booting worker with pid: 1028401
+2022-11-21-16:59:04.614.485 [1028401] [INFO] create_app starts.
+2022-11-21-16:59:04.617.319 [1028401] [INFO] [mindinsight.backend.config].init_module starts.
+2022-11-21-16:59:04.663.153 [1028401] [INFO] [mindinsight.backend.data_manager].init_module starts.
+2022-11-21-16:59:05.665.825 [1028401] [INFO] [mindinsight.backend.data_manager].init_module ends.
+2022-11-21-16:59:05.955.054 [1028401] [INFO] [mindinsight.backend.datavisual].init_module starts.
+2022-11-21-16:59:05.972.421 [1028401] [INFO] [mindinsight.backend.datavisual].init_module ends.
+2022-11-21-16:59:05.973.561 [1028401] [INFO] [mindinsight.backend.debugger].init_module starts.
+2022-11-21-16:59:06.006.748 [1028401] [INFO] [mindinsight.backend.debugger].init_module ends.
+2022-11-21-16:59:06.030.772 [1028401] [INFO] [mindinsight.backend.explainer].init_module starts.
+2022-11-21-16:59:06.037.391 [1028401] [INFO] [mindinsight.backend.explainer].init_module ends.
+2022-11-21-16:59:06.038.250 [1028401] [INFO] [mindinsight.backend.lineagemgr].init_module starts.
+2022-11-21-16:59:06.041.115 [1028401] [INFO] [mindinsight.backend.lineagemgr].init_module ends.
+2022-11-21-16:59:06.042.970 [1028401] [INFO] [mindinsight.backend.optimizer].init_module starts.
+2022-11-21-16:59:06.044.344 [1028401] [INFO] [mindinsight.backend.optimizer].init_module ends.
+2022-11-21-16:59:06.057.114 [1028401] [INFO] [mindinsight.backend.profiler].init_module starts.
+2022-11-21-16:59:06.082.546 [1028401] [INFO] [mindinsight.backend.profiler].init_module ends.
+2022-11-21-16:59:06.083.607 [1028401] [INFO] [mindinsight.backend.ui_config].init_module starts.
+2022-11-21-16:59:06.084.688 [1028401] [INFO] [mindinsight.backend.ui_config].init_module ends.
+2022-11-21-16:59:06.084.828 [1028401] [INFO] create_app ends.
+2022-11-21-16:59:06.087.894 [1028401] [INFO] Service start state: success.
+2022-11-21-16:59:06.088.586 [1028401] [INFO] Server pid: 1028288, start to listening.
+2022-11-21-16:59:42.167.251 [1028288] [INFO] Handling signal: int
+2022-11-21-16:59:42.168.989 [1028401] [INFO] Worker int processed.
+2022-11-21-16:59:42.269.367 [1028401] [INFO] Worker exiting (pid: 1028401)
+2022-11-21-16:59:42.568.346 [1028288] [INFO] Shutting down: Master
+2022-11-21-17:12:57.527.413 [1132720] [INFO] Starting gunicorn 20.1.0
+2022-11-21-17:12:57.530.408 [1132720] [INFO] Listening at: http://192.168.88.9:10004 (1132720)
+2022-11-21-17:12:57.530.569 [1132720] [INFO] Using worker: gthread
+2022-11-21-17:12:57.533.929 [1132811] [INFO] Booting worker with pid: 1132811
+2022-11-21-17:12:57.673.780 [1132811] [INFO] create_app starts.
+2022-11-21-17:12:57.676.517 [1132811] [INFO] [mindinsight.backend.config].init_module starts.
+2022-11-21-17:12:57.720.610 [1132811] [INFO] [mindinsight.backend.data_manager].init_module starts.
+2022-11-21-17:12:58.723.038 [1132811] [INFO] [mindinsight.backend.data_manager].init_module ends.
+2022-11-21-17:12:59.002.488 [1132811] [INFO] [mindinsight.backend.datavisual].init_module starts.
+2022-11-21-17:12:59.019.104 [1132811] [INFO] [mindinsight.backend.datavisual].init_module ends.
+2022-11-21-17:12:59.020.202 [1132811] [INFO] [mindinsight.backend.debugger].init_module starts.
+2022-11-21-17:12:59.053.292 [1132811] [INFO] [mindinsight.backend.debugger].init_module ends.
+2022-11-21-17:12:59.077.742 [1132811] [INFO] [mindinsight.backend.explainer].init_module starts.
+2022-11-21-17:12:59.084.198 [1132811] [INFO] [mindinsight.backend.explainer].init_module ends.
+2022-11-21-17:12:59.085.162 [1132811] [INFO] [mindinsight.backend.lineagemgr].init_module starts.
+2022-11-21-17:12:59.087.947 [1132811] [INFO] [mindinsight.backend.lineagemgr].init_module ends.
+2022-11-21-17:12:59.089.483 [1132811] [INFO] [mindinsight.backend.optimizer].init_module starts.
+2022-11-21-17:12:59.090.845 [1132811] [INFO] [mindinsight.backend.optimizer].init_module ends.
+2022-11-21-17:12:59.103.261 [1132811] [INFO] [mindinsight.backend.profiler].init_module starts.
+2022-11-21-17:12:59.128.221 [1132811] [INFO] [mindinsight.backend.profiler].init_module ends.
+2022-11-21-17:12:59.129.262 [1132811] [INFO] [mindinsight.backend.ui_config].init_module starts.
+2022-11-21-17:12:59.130.394 [1132811] [INFO] [mindinsight.backend.ui_config].init_module ends.
+2022-11-21-17:12:59.130.552 [1132811] [INFO] create_app ends.
+2022-11-21-17:12:59.133.651 [1132811] [INFO] Service start state: success.
+2022-11-21-17:12:59.134.478 [1132811] [INFO] Server pid: 1132720, start to listening.
+2022-11-21-17:14:04.641.591 [1132720] [INFO] Handling signal: int
+2022-11-21-17:14:04.643.348 [1132811] [INFO] Worker int processed.
+2022-11-21-17:14:04.743.725 [1132811] [INFO] Worker exiting (pid: 1132811)
+2022-11-21-17:14:05.042.606 [1132720] [INFO] Shutting down: Master
+2022-11-21-17:14:08.496.421 [1141965] [INFO] Starting gunicorn 20.1.0
+2022-11-21-17:14:08.499.043 [1141965] [INFO] Listening at: http://192.168.88.9:10004 (1141965)
+2022-11-21-17:14:08.499.188 [1141965] [INFO] Using worker: gthread
+2022-11-21-17:14:08.502.289 [1142071] [INFO] Booting worker with pid: 1142071
+2022-11-21-17:14:08.635.250 [1142071] [INFO] create_app starts.
+2022-11-21-17:14:08.637.827 [1142071] [INFO] [mindinsight.backend.config].init_module starts.
+2022-11-21-17:14:08.680.255 [1142071] [INFO] [mindinsight.backend.data_manager].init_module starts.
+2022-11-21-17:14:09.682.813 [1142071] [INFO] [mindinsight.backend.data_manager].init_module ends.
+2022-11-21-17:14:09.962.576 [1142071] [INFO] [mindinsight.backend.datavisual].init_module starts.
+2022-11-21-17:14:09.978.694 [1142071] [INFO] [mindinsight.backend.datavisual].init_module ends.
+2022-11-21-17:14:09.979.829 [1142071] [INFO] [mindinsight.backend.debugger].init_module starts.
+2022-11-21-17:14:10.010.891 [1142071] [INFO] [mindinsight.backend.debugger].init_module ends.
+2022-11-21-17:14:10.033.263 [1142071] [INFO] [mindinsight.backend.explainer].init_module starts.
+2022-11-21-17:14:10.039.419 [1142071] [INFO] [mindinsight.backend.explainer].init_module ends.
+2022-11-21-17:14:10.040.269 [1142071] [INFO] [mindinsight.backend.lineagemgr].init_module starts.
+2022-11-21-17:14:10.042.971 [1142071] [INFO] [mindinsight.backend.lineagemgr].init_module ends.
+2022-11-21-17:14:10.044.386 [1142071] [INFO] [mindinsight.backend.optimizer].init_module starts.
+2022-11-21-17:14:10.045.675 [1142071] [INFO] [mindinsight.backend.optimizer].init_module ends.
+2022-11-21-17:14:10.057.429 [1142071] [INFO] [mindinsight.backend.profiler].init_module starts.
+2022-11-21-17:14:10.081.367 [1142071] [INFO] [mindinsight.backend.profiler].init_module ends.
+2022-11-21-17:14:10.082.259 [1142071] [INFO] [mindinsight.backend.ui_config].init_module starts.
+2022-11-21-17:14:10.083.325 [1142071] [INFO] [mindinsight.backend.ui_config].init_module ends.
+2022-11-21-17:14:10.083.462 [1142071] [INFO] create_app ends.
+2022-11-21-17:14:10.086.255 [1142071] [INFO] Service start state: success.
+2022-11-21-17:14:10.086.925 [1142071] [INFO] Server pid: 1141965, start to listening.
+2022-11-21-17:15:12.093.255 [1141965] [INFO] Handling signal: int
+2022-11-21-17:15:12.094.599 [1142071] [INFO] Worker int processed.
+2022-11-21-17:15:12.194.903 [1142071] [INFO] Worker exiting (pid: 1142071)
+2022-11-21-17:15:12.394.119 [1141965] [INFO] Shutting down: Master
+2022-11-21-17:15:18.035.968 [1150430] [INFO] Starting gunicorn 20.1.0
+2022-11-21-17:15:18.038.696 [1150430] [INFO] Listening at: http://192.168.88.9:10004 (1150430)
+2022-11-21-17:15:18.038.854 [1150430] [INFO] Using worker: gthread
+2022-11-21-17:15:18.042.210 [1150561] [INFO] Booting worker with pid: 1150561
+2022-11-21-17:15:18.178.758 [1150561] [INFO] create_app starts.
+2022-11-21-17:15:18.181.424 [1150561] [INFO] [mindinsight.backend.config].init_module starts.
+2022-11-21-17:15:18.224.665 [1150561] [INFO] [mindinsight.backend.data_manager].init_module starts.
+2022-11-21-17:15:19.227.157 [1150561] [INFO] [mindinsight.backend.data_manager].init_module ends.
+2022-11-21-17:15:19.607.806 [1150561] [INFO] [mindinsight.backend.datavisual].init_module starts.
+2022-11-21-17:15:19.624.211 [1150561] [INFO] [mindinsight.backend.datavisual].init_module ends.
+2022-11-21-17:15:19.625.823 [1150561] [INFO] [mindinsight.backend.debugger].init_module starts.
+2022-11-21-17:15:19.657.147 [1150561] [INFO] [mindinsight.backend.debugger].init_module ends.
+2022-11-21-17:15:19.688.798 [1150561] [INFO] [mindinsight.backend.explainer].init_module starts.
+2022-11-21-17:15:19.695.027 [1150561] [INFO] [mindinsight.backend.explainer].init_module ends.
+2022-11-21-17:15:19.696.497 [1150561] [INFO] [mindinsight.backend.lineagemgr].init_module starts.
+2022-11-21-17:15:19.699.352 [1150561] [INFO] [mindinsight.backend.lineagemgr].init_module ends.
+2022-11-21-17:15:19.701.651 [1150561] [INFO] [mindinsight.backend.optimizer].init_module starts.
+2022-11-21-17:15:19.702.855 [1150561] [INFO] [mindinsight.backend.optimizer].init_module ends.
+2022-11-21-17:15:19.720.945 [1150561] [INFO] [mindinsight.backend.profiler].init_module starts.
+2022-11-21-17:15:19.745.244 [1150561] [INFO] [mindinsight.backend.profiler].init_module ends.
+2022-11-21-17:15:19.746.919 [1150561] [INFO] [mindinsight.backend.ui_config].init_module starts.
+2022-11-21-17:15:19.748.137 [1150561] [INFO] [mindinsight.backend.ui_config].init_module ends.
+2022-11-21-17:15:19.748.332 [1150561] [INFO] create_app ends.
+2022-11-21-17:15:19.751.706 [1150561] [INFO] Service start state: success.
+2022-11-21-17:15:19.752.454 [1150561] [INFO] Server pid: 1150430, start to listening.
+2022-11-21-17:15:58.593.594 [1150430] [INFO] Handling signal: int
+2022-11-21-17:15:58.740.816 [1150561] [INFO] Worker int processed.
+2022-11-21-17:15:58.846.404 [1150561] [INFO] Worker exiting (pid: 1150561)
+2022-11-21-17:15:59.194.759 [1150430] [INFO] Shutting down: Master
+2022-11-21-17:16:17.674.309 [1157696] [INFO] Starting gunicorn 20.1.0
+2022-11-21-17:16:17.677.308 [1157696] [INFO] Listening at: http://192.168.88.9:10004 (1157696)
+2022-11-21-17:16:17.677.505 [1157696] [INFO] Using worker: gthread
+2022-11-21-17:16:17.680.794 [1157881] [INFO] Booting worker with pid: 1157881
+2022-11-21-17:16:17.817.037 [1157881] [INFO] create_app starts.
+2022-11-21-17:16:17.819.666 [1157881] [INFO] [mindinsight.backend.config].init_module starts.
+2022-11-21-17:16:17.863.384 [1157881] [INFO] [mindinsight.backend.data_manager].init_module starts.
+2022-11-21-17:16:18.865.823 [1157881] [INFO] [mindinsight.backend.data_manager].init_module ends.
+2022-11-21-17:16:19.143.178 [1157881] [INFO] [mindinsight.backend.datavisual].init_module starts.
+2022-11-21-17:16:19.159.160 [1157881] [INFO] [mindinsight.backend.datavisual].init_module ends.
+2022-11-21-17:16:19.160.266 [1157881] [INFO] [mindinsight.backend.debugger].init_module starts.
+2022-11-21-17:16:19.191.143 [1157881] [INFO] [mindinsight.backend.debugger].init_module ends.
+2022-11-21-17:16:19.214.011 [1157881] [INFO] [mindinsight.backend.explainer].init_module starts.
+2022-11-21-17:16:19.220.137 [1157881] [INFO] [mindinsight.backend.explainer].init_module ends.
+2022-11-21-17:16:19.220.993 [1157881] [INFO] [mindinsight.backend.lineagemgr].init_module starts.
+2022-11-21-17:16:19.223.655 [1157881] [INFO] [mindinsight.backend.lineagemgr].init_module ends.
+2022-11-21-17:16:19.225.049 [1157881] [INFO] [mindinsight.backend.optimizer].init_module starts.
+2022-11-21-17:16:19.226.328 [1157881] [INFO] [mindinsight.backend.optimizer].init_module ends.
+2022-11-21-17:16:19.238.330 [1157881] [INFO] [mindinsight.backend.profiler].init_module starts.
+2022-11-21-17:16:19.262.057 [1157881] [INFO] [mindinsight.backend.profiler].init_module ends.
+2022-11-21-17:16:19.262.939 [1157881] [INFO] [mindinsight.backend.ui_config].init_module starts.
+2022-11-21-17:16:19.263.980 [1157881] [INFO] [mindinsight.backend.ui_config].init_module ends.
+2022-11-21-17:16:19.264.120 [1157881] [INFO] create_app ends.
+2022-11-21-17:16:19.267.015 [1157881] [INFO] Service start state: success.
+2022-11-21-17:16:19.267.716 [1157881] [INFO] Server pid: 1157696, start to listening.

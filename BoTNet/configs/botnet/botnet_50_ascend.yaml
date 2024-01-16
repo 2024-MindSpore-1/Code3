@@ -1,0 +1,59 @@
+# system
+mode: 0
+distribute: True
+num_parallel_workers: 16
+val_while_train: True
+val_interval: 1
+
+# dataset
+dataset: "imagenet"
+data_dir: "/path/to/imagenet"
+shuffle: True
+dataset_download: False
+batch_size: 128
+drop_remainder: True
+
+# augmentation
+image_resize: 224
+scale: [0.08, 1.0]
+ratio: [0.75, 1.333]
+hflip: 0.5
+interpolation: "bilinear"
+crop_pct: 0.875
+
+# model
+model: "botnet50"
+num_classes: 1000
+pretrained: False
+ckpt_path: ""
+keep_checkpoint_max: 30
+ckpt_save_policy: "top_k"
+ckpt_save_dir: "./ckpt"
+epoch_size: 120
+dataset_sink_mode: True
+amp_level: "O2"
+
+# loss
+loss: "CE"
+label_smoothing: 0.1
+
+# lr scheduler
+scheduler: "cosine_decay"
+min_lr: 0.00001
+lr: 0.2
+warmup_epochs: 5
+decay_epochs: 115
+
+# optimizer
+opt: "momentum"
+filter_bias_and_bn: True
+momentum: 0.9
+loss_scale: 16777216.0
+weight_decay: 0.0001
+loss_scale_type: dynamic
+drop_overflow_update: True
+use_nesterov: False
+
+# train
+clip_grad: True
+clip_value: 5.

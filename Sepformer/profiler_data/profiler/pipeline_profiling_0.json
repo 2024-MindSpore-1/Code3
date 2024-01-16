@@ -1,0 +1,1 @@
+{"op_info":[{"children":[1],"metrics":null,"num_workers":1,"op_id":0,"op_type":"DataQueueOp"},{"metrics":{"output_queue":{"length":16,"size":[3]}},"num_workers":1,"op_id":1,"op_type":"GeneratorOp"}],"sampling_interval":1000}

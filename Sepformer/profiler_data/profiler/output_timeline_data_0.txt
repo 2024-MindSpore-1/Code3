@@ -1,0 +1,26 @@
+op_name, stream_id, start_time(ms), duration(ms)
+Default/InitDataSetQueue-op0,1,1804868893.002000,2.667
+Default/GetNext-op1,1,1804868923.104000,117.62
+Default/MatMul-op2,2,1804876660.768000,0.236
+Default/BiasAdd-op3,2,1804876661.236000,0.109
+Default/OneHot-op4,2,1804876661.673000,0.128
+Default/SoftmaxCrossEntropyWithLogits-op5,2,1804876661.944000,0.095
+Default/Mul-op6,2,1804876662.244000,0.103
+Gradients/Default/gradMul/Mul-op7,1,1804880938.104000,0.094
+Gradients/Default/gradSoftmaxCrossEntropyWithLogits/Mul-op9,1,1804880938.476000,0.166
+Gradients/Default/gradBiasAdd/BiasAddGrad-op10,1,1804880938.848000,0.187
+Gradients/Default/gradMatMul/MatMul-op11,1,1804880939.209000,0.099
+Default/ApplyMomentum-op24,1,1804884833.338000,0.203
+Default/ApplyMomentum-op25,1,1804884833.693000,0.103
+Default/GetNext-op1,1,1804884835.234000,0.677
+Default/MatMul-op26,2,1804884934.063000,0.104
+Default/BiasAdd-op27,2,1804884934.329000,0.057
+Default/OneHot-op28,2,1804884934.662000,0.056
+Default/SoftmaxCrossEntropyWithLogits-op29,2,1804884934.846000,0.049
+Default/Mul-op30,2,1804884935.097000,0.053
+Gradients/Default/gradMul/Mul-op7,1,1804884935.495000,0.085
+Gradients/Default/gradSoftmaxCrossEntropyWithLogits/Mul-op9,1,1804884935.737000,0.048
+Gradients/Default/gradBiasAdd/BiasAddGrad-op10,1,1804884935.925000,0.112
+Gradients/Default/gradMatMul/MatMul-op11,1,1804884936.178000,0.048
+Default/ApplyMomentum-op24,1,1804884937.718000,0.062
+Default/ApplyMomentum-op25,1,1804884937.907000,0.06

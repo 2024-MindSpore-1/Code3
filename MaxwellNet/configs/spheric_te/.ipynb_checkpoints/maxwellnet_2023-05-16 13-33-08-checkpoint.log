@@ -1,0 +1,3 @@
+Tue, 16 May 2023 13:33:08 train_maxwellnet.py[line:32] INFO training examples/spheric_te
+Tue, 16 May 2023 13:33:08 train_maxwellnet.py[line:50] INFO Experiment description: 
+This experiment learns to solve the Maxwell's equations for a spheric lens data.

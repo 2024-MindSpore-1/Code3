@@ -1,0 +1,182 @@
+absl-py==0.13.0
+addict==2.4.0
+albumentations @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/albumentations-0.4.5-cp37-none-any.whl
+APScheduler==3.8.1
+arrow==1.2.3
+asgiref==3.5.2
+astor==0.8.1
+asttokens==2.0.8
+astunparse==1.6.3
+attrs==19.3.0
+auto-tune @ file:///root/selfgz1246726519/compiler/lib64/auto_tune-0.1.0-py3-none-any.whl
+backcall==0.2.0
+backports.zoneinfo==0.2.1
+binaryornot==0.4.4
+boto3==1.12.22
+botocore==1.15.49
+certifi==2022.6.15
+cffi @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/cffi-1.14.0-cp37-cp37m-linux_aarch64.whl
+chardet==3.0.4
+charset-normalizer==2.0.12
+click==8.1.3
+cloudpickle==1.3.0
+colorama==0.4.4
+configparser==5.2.0
+cookiecutter==2.2.2
+cryptography==3.4.7
+cycler==0.11.0
+Cython @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/Cython-0.29.14-cp37-cp37m-linux_aarch64.whl
+dask==2.18.1
+debugpy==1.6.7
+decorator==4.4.1
+defusedxml==0.7.1
+Django==3.2.15
+docutils==0.15.2
+easydict==1.9
+entrypoints==0.4
+ephemeral-port-reserve==1.1.4
+esdk-obs-python==3.20.1
+et-xmlfile==1.1.0
+Flask==2.0.1
+fonttools==4.37.1
+future==0.18.2.post20200723173923
+futures==3.0.5
+gast==0.2.2
+google-pasta==0.2.0
+grpcio==1.48.1
+grpcio-tools @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/grpcio_tools-1.26.0-cp37-cp37m-linux_aarch64.whl
+gunicorn==20.1.0
+h5py @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/h5py-2.10.0-cp37-cp37m-linux_aarch64.whl
+hccl @ file:///root/selfgz1246726519/compiler/lib64/hccl-0.1.0-py3-none-any.whl
+hccl-parser @ file:///usr/local/Ascend/ascend-toolkit/6.0.1/toolkit/tools/hccl_parser-0.1-py3-none-any.whl
+huaweicloud-sdk-python-modelarts-dataset @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/huaweicloud_sdk_python_modelarts_dataset-0.1.5-py2.py3-none-any.whl
+huaweicloudsdkcore==3.0.50
+idna==2.10
+image==1.5.28
+imageio==2.9.0
+imgaug==0.2.6
+importlib-metadata==4.12.0
+ipyfilechooser==0.6.0
+ipykernel==5.3.4
+ipython==7.34.0
+ipython-genutils==0.2.0
+ipywidgets==8.0.7
+itsdangerous==2.1.2
+jdcal==1.4.1
+jedi==0.18.1
+Jinja2==3.0.1
+jmespath==0.10.0
+joblib==1.1.0
+jupyter-client==7.3.4
+jupyter-core==4.11.1
+jupyterlab-widgets==3.0.8
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+keyboard==0.13.5
+kfac==0.2.0
+kiwisolver @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/kiwisolver-1.1.0-cp37-cp37m-linux_aarch64.whl
+lazy-import==0.2.2
+llvmlite @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/llvmlite-0.31.0-cp37-cp37m-linux_aarch64.whl
+lxml @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/lxml-4.4.2-cp37-cp37m-linux_aarch64.whl
+ma-cau==1.1.3
+ma-cau-adapter==1.1.3
+ma-cli==1.1.4
+Markdown==3.4.1
+MarkupSafe==2.1.1
+marshmallow==3.17.1
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mindarmour==1.7.0
+mindinsight==1.7.0
+mindspore-ascend @ https://ms-release.obs.cn-north-4.myhuaweicloud.com/1.10.1/MindSpore/ascend/aarch64/mindspore_ascend-1.10.1-cp37-cp37m-linux_aarch64.whl
+mindspore-dev @ file:///home/workspace/mindspore_dev-2.0.0.dev20230205-cp37-cp37m-linux_aarch64.whl
+mmcv @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/mmcv-0.2.14-cp37-cp37m-linux_aarch64.whl
+modelarts==1.4.11
+modelarts-mindspore-model-server @ http://100.95.151.167:6868/aarch64/euler/dls-release/euler-2.8/modelarts_service/modelarts_mindspore_model_server-1.0.4-py3-none-any.whl
+moxing-framework @ file:///home/workspace/moxing_framework-2.1.7.dc1f3d0b-py2.py3-none-any.whl
+mpmath==1.2.1
+msadvisor @ file:///usr/local/Ascend/ascend-toolkit/6.0.1/tools/msadvisor/python/msadvisor-1.0.0-cp37-abi3-linux_aarch64.whl
+nest-asyncio==1.5.5
+networkx==2.6.3
+npu-bridge==1.15.0
+npu-device==0.1
+numba @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/numba-0.47.0-cp37-cp37m-linux_aarch64.whl
+numexpr @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/numexpr-2.7.1-cp37-cp37m-linux_aarch64.whl
+numpy==1.21.2
+op-gen @ file:///usr/local/Ascend/ascend-toolkit/6.0.1/toolkit/tools/op_gen-0.1-py3-none-any.whl
+op-test-frame @ file:///usr/local/Ascend/ascend-toolkit/6.0.1/toolkit/tools/op_test_frame-0.1-py3-none-any.whl
+opc-tool @ file:///root/selfgz1246726519/compiler/lib64/opc_tool-0.1.0-py3-none-any.whl
+opencv-python @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/opencv_python-4.2.0.34-cp37-cp37m-linux_aarch64.whl
+opencv-python-headless==4.5.4.60
+openpyxl==3.0.3
+opt-einsum==3.3.0
+packaging==21.3
+pandas @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/pandas-1.1.3-cp37-cp37m-linux_aarch64.whl
+parso==0.8.3
+pathlib2==2.3.7.post1
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.2.0
+prettytable==2.1.0
+prometheus-client==0.8.0
+prompt-toolkit==3.0.30
+protobuf==3.20.3
+psutil @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/psutil-5.7.0-cp37-cp37m-linux_aarch64.whl
+ptyprocess==0.7.0
+pycocotools @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/pycocotools-2.0.0-cp37-cp37m-linux_aarch64.whl
+pycparser==2.21
+Pygments==2.12.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+python-slugify==8.0.1
+pytz==2022.2.1
+PyWavelets @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/PyWavelets-1.1.1-cp37-cp37m-linux_aarch64.whl
+PyYAML @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/PyYAML-5.3.1-cp37-cp37m-linux_aarch64.whl
+pyzmq==23.2.0
+requests==2.27.1
+requests-futures==1.0.0
+s3transfer==0.3.7
+schedule-search @ file:///root/selfgz1246726519/compiler/lib64/schedule_search-0.1.0-py3-none-any.whl
+scikit-image @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/scikit_image-0.17.2-cp37-cp37m-linux_aarch64.whl
+scikit-learn==0.24.0
+scipy @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/scipy-1.5.4-cp37-cp37m-linux_aarch64.whl
+semantic-version==2.8.5
+Shapely==1.8.4
+six==1.16.0
+sqlparse==0.4.2
+sympy==1.4
+tables @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/tables-3.6.1-cp37-cp37m-linux_aarch64.whl
+tabulate==0.8.9
+te @ file:///root/selfgz1246726519/compiler/lib64/te-0.4.0-py3-none-any.whl
+tenacity==8.0.1
+tensorboard==1.15.0
+tensorboardX==2.6.2.2
+tensorflow @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/tensorflow-1.15.0-cp37-cp37m-linux_aarch64.whl
+tensorflow-estimator==1.15.1
+tensorflow-probability==0.10.1
+termcolor==1.1.0
+terminaltables==3.1.0
+text-unidecode==1.3
+thop==0.1.1.post2209072238
+threadpoolctl==3.1.0
+tifffile==2021.11.2
+toml==0.10.1
+topi @ file:///root/selfgz1246726519/compiler/lib64/topi-0.4.0-py3-none-any.whl
+torch==1.13.1
+tornado==6.2
+tqdm==4.46.1
+traitlets==5.3.0
+treelib==1.6.1
+typing_extensions==4.3.0
+tzlocal==5.0.1
+umap-learn-modified @ http://100.95.151.167:6868/aarch64/euler/dls-release/euleros-arm/compiled-wheel/umap_learn_modified-0.3.8-py3-none-any.whl
+urllib3==1.26.12
+wcwidth==0.2.5
+Werkzeug==2.2.2
+widgetsnbextension==4.0.8
+wrapt==1.14.1
+XlsxWriter==3.0.3
+xmltodict==0.12.0
+yapf==0.32.0
+zipp==3.8.1

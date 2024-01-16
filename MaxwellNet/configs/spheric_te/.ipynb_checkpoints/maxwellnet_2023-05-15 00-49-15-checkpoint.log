@@ -1,0 +1,15 @@
+Mon, 15 May 2023 00:49:15 train_maxwellnet.py[line:32] INFO training examples/spheric_te
+Mon, 15 May 2023 00:49:15 train_maxwellnet.py[line:51] INFO Experiment description: 
+This experiment learns to solve the Maxwell's equations for a spheric lens data.
+Mon, 15 May 2023 00:49:32 train_maxwellnet.py[line:69] INFO Number of network parameters: 5852648
+Mon, 15 May 2023 00:49:32 train_maxwellnet.py[line:70] DEBUG {'depth': 6, 'filter': 16, 'norm': 'weight', 'up_mode': 'upconv'}
+Mon, 15 May 2023 00:49:32 train_maxwellnet.py[line:71] DEBUG {'wavelength': 1, 'dpl': 20, 'Nx': 160, 'Nz': 192, 'pml_thickness': 30, 'symmetry_x': True, 'mode': 'te', 'high_order': 'fourth'}
+Mon, 15 May 2023 00:49:32 train_maxwellnet.py[line:103] INFO Train Dataset length: 1
+Mon, 15 May 2023 00:49:32 train_maxwellnet.py[line:133] INFO Training start
+Mon, 15 May 2023 00:49:50 train_maxwellnet.py[line:141] INFO [Train] 1 epoch. Loss: 397.63400
+Mon, 15 May 2023 00:50:02 train_maxwellnet.py[line:141] INFO [Train] 2 epoch. Loss: 397.55289
+Mon, 15 May 2023 00:50:10 train_maxwellnet.py[line:141] INFO [Train] 3 epoch. Loss: 397.42410
+Mon, 15 May 2023 00:50:18 train_maxwellnet.py[line:141] INFO [Train] 4 epoch. Loss: 397.20929
+Mon, 15 May 2023 00:50:26 train_maxwellnet.py[line:141] INFO [Train] 5 epoch. Loss: 396.84201
+Mon, 15 May 2023 00:50:33 train_maxwellnet.py[line:141] INFO [Train] 6 epoch. Loss: 396.21661
+Mon, 15 May 2023 00:50:42 train_maxwellnet.py[line:141] INFO [Train] 7 epoch. Loss: 395.16977

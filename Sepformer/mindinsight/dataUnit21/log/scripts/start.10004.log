@@ -1,0 +1,40 @@
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:03.520.101 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:03.520.352 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:03.520.461 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer/dataUnit21/profiler
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:03.520.553 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:06.930.176 [mindinsight/scripts/start.py:200][SCRIPTS] Start mindinsight done. Workspace is /old/gxl/sepformer/mindinsight/dataUnit21,
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:06.930.443 [mindinsight/scripts/start.py:201][SCRIPTS] Port is 10004,
+[INFO] MI(1028159:281473624065232,MainProcess):2022-11-21-16:59:06.930.584 [mindinsight/scripts/start.py:202][SCRIPTS] Summary base dir is /old/gxl/sepformer/dataUnit21/profiler
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:12:56.609.494 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:12:56.609.714 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:12:56.609.817 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer/profiler_data
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:12:56.609.909 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:13:00.013.199 [mindinsight/scripts/start.py:200][SCRIPTS] Start mindinsight done. Workspace is /old/gxl/sepformer/mindinsight/dataUnit21,
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:13:00.013.472 [mindinsight/scripts/start.py:201][SCRIPTS] Port is 10004,
+[INFO] MI(1132579:281473624655056,MainProcess):2022-11-21-17:13:00.013.616 [mindinsight/scripts/start.py:202][SCRIPTS] Summary base dir is /old/gxl/sepformer/profiler_data
+[INFO] MI(1134796:281473372472528,MainProcess):2022-11-21-17:13:12.960.051 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1134796:281473372472528,MainProcess):2022-11-21-17:13:12.960.259 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1134796:281473372472528,MainProcess):2022-11-21-17:13:12.960.359 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer/profiler_data
+[INFO] MI(1134796:281473372472528,MainProcess):2022-11-21-17:13:12.960.451 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[ERROR] MI(1134796:281473372472528,MainProcess):2022-11-21-17:13:13.198.923 [mindinsight/scripts/start.py:191][SCRIPTS] Reusing MindInsight on port 10004. (pid 1133012, Use "mindinsight stop --port 10004" to stop it.) Web address: http://192.168.88.9:10004
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:07.600.856 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:07.601.152 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:07.601.254 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer/profiler_data
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:07.601.344 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:11.005.911 [mindinsight/scripts/start.py:200][SCRIPTS] Start mindinsight done. Workspace is /old/gxl/sepformer/mindinsight/dataUnit21,
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:11.006.161 [mindinsight/scripts/start.py:201][SCRIPTS] Port is 10004,
+[INFO] MI(1141827:281473301169360,MainProcess):2022-11-21-17:14:11.006.294 [mindinsight/scripts/start.py:202][SCRIPTS] Summary base dir is /old/gxl/sepformer/profiler_data
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:17.133.725 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:17.133.943 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:17.134.045 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:17.134.137 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:20.527.598 [mindinsight/scripts/start.py:200][SCRIPTS] Start mindinsight done. Workspace is /old/gxl/sepformer/mindinsight/dataUnit21,
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:20.527.844 [mindinsight/scripts/start.py:201][SCRIPTS] Port is 10004,
+[INFO] MI(1150306:281472969884880,MainProcess):2022-11-21-17:15:20.527.979 [mindinsight/scripts/start.py:202][SCRIPTS] Summary base dir is /old/gxl/sepformer
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:16.758.485 [mindinsight/scripts/start.py:179][SCRIPTS] workspace = /old/gxl/sepformer/mindinsight/dataUnit21
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:16.758.700 [mindinsight/scripts/start.py:179][SCRIPTS] port = 10004
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:16.758.801 [mindinsight/scripts/start.py:179][SCRIPTS] summary_base_dir = /old/gxl/sepformer/profiler_data/profiler
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:16.758.893 [mindinsight/scripts/start.py:179][SCRIPTS] enable_debugger = False
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:20.150.461 [mindinsight/scripts/start.py:200][SCRIPTS] Start mindinsight done. Workspace is /old/gxl/sepformer/mindinsight/dataUnit21,
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:20.150.775 [mindinsight/scripts/start.py:201][SCRIPTS] Port is 10004,
+[INFO] MI(1157595:281473359430864,MainProcess):2022-11-21-17:16:20.150.923 [mindinsight/scripts/start.py:202][SCRIPTS] Summary base dir is /old/gxl/sepformer/profiler_data/profiler

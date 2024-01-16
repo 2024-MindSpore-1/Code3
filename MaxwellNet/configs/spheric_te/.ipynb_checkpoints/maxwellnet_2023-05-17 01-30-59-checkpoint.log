@@ -1,0 +1,7 @@
+Wed, 17 May 2023 01:30:59 train_maxwellnet.py[line:32] INFO training examples/spheric_te
+Wed, 17 May 2023 01:30:59 train_maxwellnet.py[line:50] INFO Experiment description: 
+This experiment learns to solve the Maxwell's equations for a spheric lens data.
+Wed, 17 May 2023 01:31:05 train_maxwellnet.py[line:58] DEBUG {'depth': 6, 'filter': 16, 'norm': 'weight', 'up_mode': 'upconv'}
+Wed, 17 May 2023 01:31:05 train_maxwellnet.py[line:59] DEBUG {'wavelength': 1, 'dpl': 20, 'Nx': 160, 'Nz': 192, 'pml_thickness': 30, 'symmetry_x': True, 'mode': 'te', 'high_order': 'fourth'}
+Wed, 17 May 2023 01:31:05 train_maxwellnet.py[line:93] INFO Train Dataset length: 1
+Wed, 17 May 2023 01:31:05 train_maxwellnet.py[line:124] INFO Training start

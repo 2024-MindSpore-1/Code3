@@ -1,0 +1,48 @@
+# Architecture 81.31%
+arch: TransformerCPI                                                   # 模型结构
+
+run_modelarts: True
+
+# ===== Dataset ===== #
+#data_url: ../data/imagenet # 数据集地址
+#data_url: /home/work/user-job-dir/inputs/data/imagenet #数据集地址
+set: bindingDB # 数据集名称
+num_classes: 1000 # 分类数据的类别数
+mix_up: 0.8 # MixUp系数
+cutmix: 1.0 # CutMix系数
+auto_augment: rand-m9-mstd0.5-inc1 # 随机数据增强参数
+interpolation: bicubic # 插值方法
+re_prob: 0.25 # random_erasing参数
+re_mode: pixel # random_erasing参数
+re_count: 1 # random_erasing参数
+mixup_prob: 1.0 # mix_up的概率
+switch_prob: 0.5 # mixup和cutmix的转换概率
+mixup_mode: batch # mixup的模式
+image_size: 224 # 图像大小
+crop_pct: 0.875 # 图像缩放比例
+
+# ===== Learning Rate Policy ======== #
+optimizer: adamw # 优化器类别
+base_lr: 0.0001 # 基础学习率
+warmup_lr: 0.000001 # 学习率热身初始值
+min_lr: 0.00001 # 最小学习率
+lr_scheduler: cosine_lr # 学习率变换策略
+warmup_length: 5 # 学习率热身轮数
+
+# ===== Network training config ===== #
+amp_level: O3 # 混合精度级别
+keep_bn_fp32: True # 是否保持BN为FP32运算
+beta: [ 0.9, 0.999 ] # 优化器一阶、二阶梯度系数
+clip_global_norm_value: 5. # 全局梯度裁剪范数
+is_dynamic_loss_scale: True # 是否为动态的损失缩放
+epochs: 80 # 训练轮数
+cooldown_epochs: 5 # 学习率冷却稀疏
+label_smoothing: 0.1 # 标签平滑稀疏
+weight_decay: 0.05 # 权重衰减系数
+momentum: 0.9 # 优化器动量
+batch_size: 32 # 单卡批次大小
+drop_path_rate: 0.1 # drop path概率
+
+# ===== Hardware setup ===== #
+num_parallel_workers: 16 # 数据预处理线程数
+device_target: Ascend # 设备选择

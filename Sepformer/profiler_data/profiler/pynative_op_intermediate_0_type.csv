@@ -1,0 +1,10 @@
+op_type,execution_time,execution_frequency,percent
+InitDataSetQueue,2.667,1,4.26
+GetNext,59.148500000000006,2,94.59
+MatMul,0.12174999999999998,4,0.19
+BiasAdd,0.083,2,0.13
+OneHot,0.092,2,0.15
+SoftmaxCrossEntropyWithLogits,0.07200000000000001,2,0.12
+Mul,0.09150000000000001,6,0.15
+BiasAddGrad,0.1495,2,0.24
+ApplyMomentum,0.107,4,0.17

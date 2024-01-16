@@ -1,0 +1,35 @@
+arch: DimenetPP                                                   # 模型结构
+
+run_modelarts: True
+
+# ===== Dataset ===== #
+#data_url: ../data/imagenet # 数据集地址
+#data_url: /home/work/user-job-dir/inputs/data/imagenet #数据集地址
+set: qm9 # 数据集名称
+
+
+# ===== Learning Rate Policy ======== #
+optimizer: adamw # 优化器类别
+base_lr: 0.001 # 基础学习率
+warmup_lr: 0.000001 # 学习率热身初始值
+min_lr: 0.00001 # 最小学习率
+lr_scheduler: exp_lr # 学习率变换策略
+warmup_length: 1 # 学习率热身轮数
+
+# ===== Network training config ===== #
+amp_level: O3 # 混合精度级别
+keep_bn_fp32: True # 是否保持BN为FP32运算
+beta: [ 0.9, 0.999 ] # 优化器一阶、二阶梯度系数
+clip_global_norm_value: 5. # 全局梯度裁剪范数
+is_dynamic_loss_scale: True # 是否为动态的损失缩放
+epochs: 50 # 训练轮数
+cooldown_epochs: 1 # 学习率冷却稀疏
+label_smoothing: 0.1 # 标签平滑稀疏
+weight_decay: 0.05 # 权重衰减系数
+momentum: 0.9 # 优化器动量
+batch_size: 32 # 单卡批次大小
+drop_path_rate: 0.1 # drop path概率
+
+# ===== Hardware setup ===== #
+num_parallel_workers: 16 # 数据预处理线程数
+device_target: Ascend # 设备选择

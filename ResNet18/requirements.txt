@@ -1,0 +1,5 @@
+numpy
+scipy
+easydict
+matplotlib
+onnxruntime-gpu

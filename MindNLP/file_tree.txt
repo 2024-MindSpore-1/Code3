@@ -1,0 +1,53 @@
+.
+├── 01lora微调
+│   ├── merge_shuffle.csv
+│   ├── mindglm推理.ipynb
+│   ├── output.json
+│   ├── run_glm_6b_lora-2023.yaml
+│   ├── train.json
+│   └── 数据转换.py
+├── 02提取攻击
+├── 03MASK保护
+│   ├── 01中文NER
+│   │   ├── mindspore-api接口实现
+│   │   └── rwkv-api接口实现
+│   │       ├── merge_shuffle-Copy1.csv
+│   │       ├── merge_shuffle.csv
+│   │       ├── merge_shuffle_mask.csv
+│   │       ├── rwkv_ner-Copy1.ipynb
+│   │       └── rwkv_ner.ipynb
+│   └── 01英文NER
+│       ├── archive.zip
+│       ├── Bert-LSTM-CRF.ipynb
+│       ├── conll2003
+│       │   ├── metadata
+│       │   ├── test.txt
+│       │   ├── train.txt
+│       │   └── valid.txt
+│       └── tokenizer.json
+├── 04成员推断和重构攻击
+│   ├── bert
+│   │   ├── config.json
+│   │   ├── tokenizer.json
+│   │   └── vocab.txt
+│   ├── bert_cn
+│   │   ├── config.json
+│   │   ├── tokenizer_config.json
+│   │   ├── tokenizer.json
+│   │   └── vocab.txt
+│   ├── demo_new.ipynb
+│   ├── fill_mask.py
+│   ├── main.ipynb
+│   └── ppl.py
+├── 05贪婪坐标梯度
+├── 06chatglm挂api
+│   ├── chatglm_model_api.py
+│   ├── chatglm_model.ipynb
+│   ├── test_api.py
+│   └── test_modeling_chatglm.py
+├── file_tree.txt
+├── untitled.txt
+├── 使用prompt工程生成样本.md
+└── 攻击方案.md
+
+13 directories, 37 files

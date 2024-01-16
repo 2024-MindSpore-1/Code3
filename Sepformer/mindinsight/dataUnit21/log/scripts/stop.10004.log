@@ -1,0 +1,4 @@
+[INFO] MI(1032826:281473498236112,MainProcess):2022-11-21-16:59:42.065.020 [mindinsight/scripts/stop.py:111][SCRIPTS] Stop mindinsight with port 10004 and pid 1028288.
+[INFO] MI(1141339:281473490830544,MainProcess):2022-11-21-17:14:04.526.353 [mindinsight/scripts/stop.py:111][SCRIPTS] Stop mindinsight with port 10004 and pid 1132720.
+[INFO] MI(1149611:281473796818128,MainProcess):2022-11-21-17:15:11.977.384 [mindinsight/scripts/stop.py:111][SCRIPTS] Stop mindinsight with port 10004 and pid 1141965.
+[INFO] MI(1155320:281473859929296,MainProcess):2022-11-21-17:15:58.481.707 [mindinsight/scripts/stop.py:111][SCRIPTS] Stop mindinsight with port 10004 and pid 1150430.

@@ -1,0 +1,20 @@
+postprocess:
+  name: PGPostprocess
+  character_dict_path: mindocr/utils/dict/ic15_dict.txt
+  dataset: totaltext
+  score_thresh: 0.5
+  mode: fast  # two ways: fast or slow
+  point_gather_mode: align  # two mode: align and none, align mode is better than none mode
+
+eval:
+  dataset:
+    transform_pipeline:
+      - DecodeImage:
+          img_mode: RGB
+          channel_first: False
+      - DetResizeNormForInfer:
+          keep_ratio: True
+          norm_before_pad: True
+          mean: [ 123.675, 116.28 , 103.53 ]
+          std: [ 58.395, 57.12 , 57.375 ]
+      - ToCHWImage:

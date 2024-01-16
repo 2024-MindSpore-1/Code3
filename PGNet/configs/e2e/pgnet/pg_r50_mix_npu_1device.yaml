@@ -1,0 +1,163 @@
+system:
+  mode: 0   # NOTE 0 for graph mode, 1 for pynative mode in MindSpore
+  distribute: False
+  device_id: 0
+  amp_level: 'O2'
+  amp_level_infer: 'O2'
+  seed: 1024
+  ckpt_save_policy: "top_k"
+  ckpt_max_keep: 3
+  log_interval: 1  # NOTE 启用data_sink，以epoch为单位
+  val_while_train: True
+  val_start_epoch: 0
+  val_interval: 1
+  drop_overflow_update: True
+
+common:
+  character_dict_path: &character_dict_path mindocr/utils/dict/ic15_dict.txt
+  infer_mode: False
+
+model:
+  type: e2e
+  transform: null
+  backbone:
+    name: e2e_resnet50
+    pretrained: False
+    pytorch_like: &pytorch_like False  # 影响pad操作
+  neck:
+    name: PGFPN
+    pytorch_like: *pytorch_like
+  head:
+    name: PGHead
+    num_classes: 37
+  pretrained: pretrain/pgnet/pgnet_train_step1.ckpt  # train.py自动更改此字段
+  resume: False
+
+postprocess:
+  name: PGPostprocess
+  character_dict_path: *character_dict_path
+  dataset: totaltext
+  score_thresh: 0.5
+  mode: fast  # two ways: fast or slow
+  point_gather_mode: &point_gather_mode align  # two mode: align and none, align mode is better than none mode
+
+metric:
+  name: E2EMetric
+  main_indicator: f_score_e2e
+  character_dict_path: *character_dict_path
+  mode: a  # 集群不方便找文件夹，注意eval要用test_mat.txt
+  # gt_mat_dir: data/total_text/test/Groundtruth
+  print_flag: True
+
+loss:
+  name: PGLoss
+  tcl_len: &tcl_len 64
+  max_text_len: &max_text_len 50 # the max length in seq
+  max_text_nums: &max_text_nums 30 # the max seq nums in a pic
+
+scheduler:
+  scheduler: cosine_decay
+  min_lr: 0
+  lr: 0.001
+  num_epochs: 600
+  warmup_epochs: 50
+  decay_epochs: 550
+
+optimizer:
+  opt: adam
+  beta1: 0.9
+  beta2: 0.999
+  weight_decay: 0.0001
+  nesterov: False  # FIXME 是否使用 Nesterov 加速梯度 (NAG) 算法来更新梯度。
+
+# only used for mixed precision training
+loss_scaler:
+  type: dynamic
+  loss_scale: 512
+  scale_factor: 2
+  scale_window: 1000
+
+train:
+  gradient_accumulation_steps: 6  # 16 * 1 * 6 = 96  控制总batchsize即可
+  clip_grad: True
+  clip_norm: 5.0
+  ema: True
+  ema_decay: 0.9999
+  ckpt_save_dir: 'work_dir/pgnet'  # 要设置args.train_url为/cache/output，训练结束后会自动搬运
+  dataset_sink_mode: True
+  pred_cast_fp32: True
+  dataset:
+    type: E2EDataSet
+    dataset_root: ./data  # train.py自动更改此字段
+    data_dir:
+    - 'total_text/train'
+    - 'ICDAR2019/train/images'
+    label_file:
+    - 'total_text/train/train.txt'
+    - 'ICDAR2019/train/det_gt_en.txt'  # 完全为Latin的子集
+    dataset:
+    - 'totaltext'
+    - 'ICDAR2019'
+    sample_ratio: [1, 1]
+    transform_pipeline:
+      - DecodeImage:
+          img_mode: RGB
+          to_float32: False
+      - PGLabelEncode:
+      - PGImageAUG:
+          use_resize: True
+      - PGProcessTrain:
+          character_dict_path: *character_dict_path
+          max_text_len: *max_text_len
+          max_text_nums: *max_text_nums
+          tcl_len: *tcl_len
+          point_gather_mode: *point_gather_mode
+      - ToCHWImage:
+    output_columns: ['image', 'tcl_map', 'tbo_map','tdo_map', 'training_mask', 'ctc_points', 'ctc_masks', 'ctc_labels']
+    net_input_column_index: [0] # input indices for network forward func in output_columns
+    label_column_index: [1, 2, 3, 4, 5, 6, 7] # input indices marked as label
+  loader:
+    shuffle: True
+    batch_size: 16  # 14
+    drop_remainder: True
+    max_rowsize: 16
+    num_workers: 16
+
+eval:
+  ckpt_load_path: 'work_dir/pgnet/best.ckpt'
+  dataset_sink_mode: True
+  dataset:
+    type: E2EDataSet
+    dataset_root: ./data  # train.py自动更改此字段
+    data_dir: total_text/test
+    label_file: total_text/test/test_mat.txt  # 等效mode==b时的标注，可以置metric.mode == a
+    dataset: totaltext
+    sample_ratio: 1.0
+    transform_pipeline:
+      - DecodeImage:
+          # img_mode: BGR  # 原paddle-ocr，效果稍差
+          img_mode: RGB
+          to_float32: False
+      - E2ELabelEncodeTest:
+          keep_invalid: True  # NOTE 保留特殊字符
+          lower: True
+          max_text_len: *max_text_len
+          character_dict_path: *character_dict_path
+      - E2EResizeForTest:
+          max_side_len: 768
+          dataset: totaltext
+      - NormalizeImage:
+          bgr_to_rgb: False
+          is_hwc: True
+          mean: imagenet
+          std: imagenet
+      - ToCHWImage:
+    output_columns: ['image', 'shape_list', 'img_id', 'polys', 'texts', 'ignore_tags']  # shape_list 给 postprocess 用
+    net_input_column_index: [0] # input indices for network forward func in output_columns
+    label_column_index: [2, 3, 4, 5] # input indices marked as label
+  loader:
+    shuffle: False
+    batch_size: 1
+    drop_remainder: False
+    max_rowsize: 16
+    num_workers: 4

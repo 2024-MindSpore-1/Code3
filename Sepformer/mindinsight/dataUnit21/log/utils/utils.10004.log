@@ -1,0 +1,8 @@
+[INFO] MI(1028401:281473773880528,MainProcess):2022-11-21-16:59:42.167.957 [mindinsight/utils/computing_resource_mgr.py:67][UTILS] Start to exit.
+[INFO] MI(1028401:281473773880528,MainProcess):2022-11-21-16:59:42.168.411 [mindinsight/utils/computing_resource_mgr.py:72][UTILS] Exited.
+[INFO] MI(1132811:281472893273296,MainProcess):2022-11-21-17:14:04.642.269 [mindinsight/utils/computing_resource_mgr.py:67][UTILS] Start to exit.
+[INFO] MI(1132811:281472893273296,MainProcess):2022-11-21-17:14:04.642.735 [mindinsight/utils/computing_resource_mgr.py:72][UTILS] Exited.
+[INFO] MI(1142071:281473060783312,MainProcess):2022-11-21-17:15:12.093.825 [mindinsight/utils/computing_resource_mgr.py:67][UTILS] Start to exit.
+[INFO] MI(1142071:281473060783312,MainProcess):2022-11-21-17:15:12.094.078 [mindinsight/utils/computing_resource_mgr.py:72][UTILS] Exited.
+[INFO] MI(1150561:281473411400912,MainProcess):2022-11-21-17:15:58.596.715 [mindinsight/utils/computing_resource_mgr.py:67][UTILS] Start to exit.
+[INFO] MI(1150561:281473411400912,MainProcess):2022-11-21-17:15:58.739.754 [mindinsight/utils/computing_resource_mgr.py:72][UTILS] Exited.

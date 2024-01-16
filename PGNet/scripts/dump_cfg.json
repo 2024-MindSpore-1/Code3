@@ -1,0 +1,16 @@
+{
+    "common_dump_settings": {
+        "dump_mode": 0,
+        "path": "/data1/wuhao/mind_lab/mindocr/dump",
+        "net_name": "PGNet",
+        "iteration": "5-7",
+        "saved_data": "tensor",
+        "input_output": 0,
+        "kernels": ["Default/Conv-op12"],
+        "support_device": [0]
+    },
+    "e2e_dump_settings": {
+        "enable": true,
+        "trans_flag": true
+    }
+}
